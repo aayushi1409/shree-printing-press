@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHREE PRINTING PRESS</title>
+	<meta charset="UTF-8">
+	<!---------------------Style sheets--------------------->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!------------------------Font Awesome CDN--------------------------->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-----------Slick Slider--------------->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+
+
+	
+</head>
+<body>
+	<!-- header ------------------------------------------------------------------------------------------------------------------------->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-12">
+					<div class="btn-group">
+						<button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">USD</button>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">ERU-Euro</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 co-12 text-center">
+					<h2 class="my-md-3 site-title text-white">Shree Printing Press</h2>
+				</div>
+				<div class="col-md-4 col-12 text-right">
+					<p class="my-md-4 header-links">
+						<a href="project3/login_signup.html" class="px-2">Log In</a>
+						<a href="project3/login_signup.html" class="px-1">Sign UP</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p-0">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FEATURES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">COLLECTION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SHOP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT US</a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-nav">
+  	<div class="search-box">
+  	<input class="search-txt" type="text" name="" placeholder=" Search">
+  <!--class="nav-item border rounded-circle mx-2 search-icon">-->
+  		<a href="#" class="search-btn"><i class="fa fa-search p-2"></i></a>
+  	</li>
+  </div>
+
+  	<!--<li class="nav-item border rounded-circle mx-2 basket-icon">
+  		<i class="fa fa-shopping-basket p-2"></i>
+  	</li>-->
+  </div>
+
+</nav>
+		</div>
+	</header>
+	<!-- /header ------------------------------------------------------------------------------------------>
+
+
+	<!-----------------------------BootStrap CDN------------------------------>
+	
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<script>
+		var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image Listhttp://lorempixel.com/400/200/animals";
+images[1] = "IMAGES/banner_image_1.jpg"
+images[0] = "IMAGES/banner_image_2.jpg";
+images[2] = "IMAGES/banner_image_3.jpg";
+
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+	</script>
+
+<img name="slide" width="1550" height="500">
+
+
+<br><br><br>
+
+	<!------------------------------------------------------MAIN SECTION-------------------------------------------------------------->
+
+	<main>
+			
+
+		<table border="0" width="100%" height="46%" class="bg-light">
+		<tr>
+			<td colspan="5" class="head1"><h2>ANNIVERSARY GIFTS</h2><hr></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image1.jpg" class="images" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.png" class="images" width="250" height="250" ></a></td>
+
+		</tr>
+		<tr>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			
+		</tr>
+		<tr>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+
+
+		</tr>
+		</table>
+		<br>
+
+		<table border="0" width="100%" height="46%" class="bg-light">
+		<tr>
+			<td colspan="5" class="head1"><h2>BIRTHDAY GIFTS</h2><hr></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.1.jpg" class="images" width="230" height="230"></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.2.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.3.webp" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.4.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image2.5.jpg" class="images" width="250" height="250" ></a></td>
+
+		</tr>
+		<tr>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			
+		</tr>
+		<tr>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			
+
+		</tr>
+		</table>
+
+		<br>
+
+		<table border="0" width="100%" height="46%" class="bg-light">
+		<tr>
+			<td colspan="5" class="head1"><h2>FESTIVAL GIFTS</h2><hr></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.1.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.2.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.3.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.4.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image3.5.png" class="images" width="250" height="250" ></a></td>
+
+		</tr>
+		<tr>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			
+		</tr>
+		<tr>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			
+
+		</tr>
+		</table>
+
+		<br>
+		<table border="0" width="100%" height="46%" class="bg-light">
+		<tr>
+			<td colspan="5" class="head1"><h2>BEST UNDER 199 RUPEES</h2><hr></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.1.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.2.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.3.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.4.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.5.jpg" class="images" width="250" height="250" ></a></td>
+
+		</tr>
+
+		<tr>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+
+		</tr>
+
+		<tr>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			
+
+		</tr>
+		</table>
+
+		<br>
+		<table border="0" width="100%" height="46%" class="bg-light">
+		<tr>
+			<td colspan="5" class="head1"><h2>OFFICE ESSENTIALS</h2><hr></td>
+		</tr>
+		<br>
+
+		<tr>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.1.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.2.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.3.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image5.4.jpg" class="images" width="230" height="230" ></a></td>
+			<td><a href="project5/product_page.html"><img src="IMAGES/image4.5.jpg" class="images" width="250" height="250" ></a></td>
+
+		</tr>
+		<tr>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			<th class="price">Personalised Human Caricature</th>
+			
+		</tr>
+		<tr>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			<th class="price">Rs.499/-</th>
+			
+
+		</tr>
+		</table>
+	
+		
+	</main>
+
+	<!------------------------------------------------------/MAIN SECTION-------------------------------------------------------------->
+
+	
+
+
+
+
+
+
+<!-----------------------------------------------FOOTER SECTION---------------------------------------------------------------->
+
+<br><br><br>
+
+	<footer>
+		<section id="footer">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-4 footer-box">
+		<img src="IMAGES/logo.jpg">
+		<p> We beleive that the greatest gifts are those where lavish care and attention is invested in designing and producing products and services that goes beyond meeting performance standards.Press the bell icon to get notifications</p>
+	</div>
+	<div class="col-md-4 footer-box">
+		<p><b>CONTACT US</b></p>
+		<p><i class="fa fa-map-marker" aria-hidden="true"></i> GAUSHALA ROAD, NEW MANDI. MUZAFFARNAGAR</p>
+		<p><i class="fa fa-phone" aria-hidden="true"></i> +91 9536003700</p>
+		<p><i class="fa fa-envelope-o" aria-hidden="true"></i> shreepress@gmail.com</p>
+	</div>		
+	<div class="col-md-4 footer-box">
+	<p><b>JOIN US</b></p>
+	<input type="email"class="form-control" placeholder="Your email">
+	<button type="button" class="btn btn-primary">SUBMIT</button>
+		
+	</div>
+	</div>
+	<hr>
+	<p class="copyright">Website crafted by Aayushi singhal.</p>
+	</div>
+	
+</section>
+	</footer>
+
+	<!-----------------------------------------------/FOOTER SECTION---------------------------------------------------------------->
+
+
+</body>
+</html>
